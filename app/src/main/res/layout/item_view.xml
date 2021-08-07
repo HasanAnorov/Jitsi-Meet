@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11 ."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/room_purpose"
+            android:text="This is room purpose"
+            android:maxLines="1"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/room_count"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/room_name"
+            android:text="This is room name"
+            android:maxLines="1"
+            android:lines="1"
+            android:layout_marginEnd="6dp"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/room_purpose"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@id/room_count"
+            android:layout_marginStart="4dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
